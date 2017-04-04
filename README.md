@@ -1,4 +1,4 @@
-# XapiIban
+# XapiDemo - [http://www.muller.tech/xapi-demo/](http://www.muller.tech/xapi-demo/)
 
 ## Description
 
@@ -6,7 +6,7 @@ XapiIban is a angular 4 application I developped as a proof of concept for [Sant
 
 ## Getting started
 
-Development server: `ng serve`
-Run the unit tests: `ng test`
-Run the e2e tests: `ng e2e`
-Run the linters: `ng lint`
+- Development server: `ng serve`
+- Run the unit tests: `ng test`
+- Run the e2e tests: `ng e2e`
+- Run the linters: `ng lint`
