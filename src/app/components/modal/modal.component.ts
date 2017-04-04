@@ -1,14 +1,8 @@
-import {
-    Component,
-    Input,
-    OnInit
-} from '@angular/core';
-
+import { Component, Input, OnInit, HostListener } from '@angular/core';
 import { ModalService } from './modal.service';
 
 @Component({
     selector: 'xapi-modal',
-    host: { '(document:keyup)': 'keyup($event)' },
     styleUrls: ['./modal.scss'],
     template: `
       <div [ngClass]="{'closed': !isOpen}">
@@ -32,6 +26,10 @@ export class ModalComponent implements OnInit {
   @Input() modalTitle: string;
   @Input() blocking = false;
   isOpen = false;
+
+  @HostListener('keyup') onMouseEnter(event) {
+    this.keyup(event);
+  }
 
   constructor(private modalService: ModalService) {
   }
